@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600|Raleway:500,700,800");
 
-/*
-	Slate by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -170,14 +164,19 @@ input, select, textarea {
 		text-transform: uppercase;
 	}
 
-		h2:after, h3:after, h4:after, h5:after, h6:after {
+		h1:after, h2:after, h3:after, h4:after, h5:after, h6:after {
 			content: '';
             background-color: #0f0f0fba;
             display: block;
             height: 2px;
-            margin: 1rem auto 0;
+            margin: 1rem 0;
             width: 7rem;
 		}
+
+        h1:after {
+            background-color: #fff;
+            margin: 2rem auto 0;
+        }
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			border-bottom: 0;
@@ -4148,7 +4147,7 @@ input, select, textarea {
     display: flex;
     justify-content: center;
     min-height: 40rem;
-    min-height: 95vh;
+    min-height: 100vh;
     position: relative;
     width: 100%;
 }
@@ -4405,11 +4404,10 @@ input, select, textarea {
     }
 
     #banner h1 {
-        border-bottom: 3px solid rgb(255, 255, 255);
         color: #ffffff;
         font-size: 4.75rem;
+        padding-bottom: 0;
         margin: 0 auto;
-        padding-bottom: 3rem;
         position: relative;
         text-align: center;
         opacity: 0.95;
@@ -4597,7 +4595,6 @@ input, select, textarea {
     @media screen and (max-width: 1280px) {
 
         #banner {
-            min-height: 90vh;
             padding-top: 3rem;
         }
 
@@ -4609,7 +4606,6 @@ input, select, textarea {
 
             #banner h1 {
                 font-size: 4rem;
-                padding-bottom: 3rem;
             }
 
             #banner .content p {
@@ -4621,14 +4617,12 @@ input, select, textarea {
     @media screen and (max-width: 980px) {
 
         #banner {
-            height: 95vh;
-            min-height: 700px;
+            height: 100vh;
             padding-top: 3rem;
         }
 
             #banner h1 {
                 font-size: 3rem;
-                padding-bottom: 3rem;
                 text-align-last: center;
                 text-align: center;
             }
@@ -4664,29 +4658,23 @@ input, select, textarea {
 
     @media screen and (max-width: 736px) {
 
-        #banner {
-            min-height: 600px;
+        #banner h1 {
+            font-size: 2.5rem;
         }
 
-            #banner h1 {
-                font-size: 2.5rem;
-                padding-bottom: 2rem;
-            }
+        #banner .inner {
+            width: calc(100% - 6rem);
+        }
 
-            #banner .inner {
-                width: calc(100% - 6rem);
-            }
-
-            #banner .content p {
-                padding-top: 2rem;
-            }
+        #banner .content p {
+            padding-top: 2rem;
+        }
 
     }
 
     @media screen and (max-width: 480px) {
 
         #banner {
-            min-height: 650px;
             padding-top: 4rem;
         }
 
@@ -4695,7 +4683,6 @@ input, select, textarea {
             }
 
             #banner h1 {
-                padding-bottom: 2rem;
                 text-align-last: center;
                 text-align: center;
             }
@@ -4899,7 +4886,7 @@ input, select, textarea {
     padding-bottom: 3px;
     color: #171717;
 }
-.contact-icons a:not(.brands), .copyright a, .logo span, 
+/* .contact-icons a:not(.brands), .copyright a, .logo span, 
 #menu > ul.links > li > a:not(.button), .copyright span {
     background: 
         linear-gradient(to right, rgba(100, 200, 200, 0),
@@ -4910,7 +4897,7 @@ input, select, textarea {
         background-position: 100% 100%, 0 100%;
         background-repeat: no-repeat;
         transition: background-size 400ms;
-}
+} */
 .contact-icons a:hover, .copyright a:hover, .logo span:hover, 
 #menu > ul.links > li > a:not(.button):hover, .copyright span:hover {
         background-size: 0 0.1em, 100% 0.1em;
@@ -5164,3 +5151,59 @@ input, select, textarea {
 				}
 
 		}
+
+/* Custom Code */
+.content h3 {
+    margin: 0;
+}
+
+/* Fade In */
+.fadeIn {
+    -moz-transition: opacity 0.75s ease-out, -moz-transform 0.75s ease-out;
+    -webkit-transition: opacity 0.75s ease-out, -webkit-transform 0.75s ease-out;
+    -ms-transition: opacity 0.75s ease-out, -ms-transform 0.75s ease-out;
+    transition: opacity 0.75s ease-out, transform 0.75s ease-out;
+}
+.fadeInLeft {
+    -moz-transition: opacity 0.75s ease-out, -moz-transform 0.75s ease-out;
+    -webkit-transition: opacity 0.75s ease-out, -webkit-transform 0.75s ease-out;
+    -ms-transition: opacity 0.75s ease-out, -ms-transform 0.75s ease-out;
+    transition: opacity 0.75s ease-out, transform 0.75s ease-out;
+}
+.fadeInBot {
+    -moz-transition: opacity 0.5s ease-out, -moz-transform 0.5s ease-out;
+    -webkit-transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out, -ms-transform 0.5s ease-out;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.fadeInOnly {
+    -moz-transition: opacity 0.75s ease-out, -moz-transform 0.75s ease-out;
+    -webkit-transition: opacity 0.75s ease-out, -webkit-transform 0.75s ease-out;
+    -ms-transition: opacity 0.75s ease-out, -ms-transform 0.75s ease-out;
+    transition: opacity 0.75s ease-out, transform 0.75s ease-out;
+}
+
+.is-inactive {
+    -moz-transform: translateX(2rem);
+    -webkit-transform: translateX(2rem);
+    -ms-transform: translateX(2rem);
+    transform: translateX(2rem);
+    opacity: 0 !important;
+}
+.is-inactive-left {
+    -moz-transform: translateX(-2rem);
+    -webkit-transform: translateX(-2rem);
+    -ms-transform: translateX(-2rem);
+    transform: translateX(-2rem);
+    opacity: 0 !important;
+}
+.is-inactive-bottom {
+    -moz-transform: translateY(2rem);
+    -webkit-transform: translateY(2rem);
+    -ms-transform: translateY(2rem);
+    transform: translateY(2rem);
+    opacity: 0 !important;
+}
+.is-inactive-passive {
+    opacity: 0 !important;
+}
