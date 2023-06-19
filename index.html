@@ -41,11 +41,13 @@
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
-                    <h1>Logo here</h1>
+                    <div class="logo"><img src="/images/logo.webp" alt=""></div>
+                    <h1></h1>
                     <div class="content">
                         <p>Amet lorem ipsum pulvinar vehicula, orci et tellus gravida amet lorem tempus ante. Nam ut purus consequat nulla lacinia.</p>
                         <ul class="actions special">
-                            <li><a href="portfolio.html" class="button large next">Our Work</a></li>
+                            <li><a href="#three" class="button large next glow-on-hover scrolly">
+                                Our Services</a></li>
                         </ul>
                     </div>
                 </div>
@@ -93,64 +95,222 @@
 					<h2>Our Services</h2>
 					<div class="posts">
 						<section class="post">
-							<span class="image fadeInLeft"><img src="images/pic01.jpg" alt="" /></span>
-							<div class="content fadeIn">
-								<h3>Residential</h3>
-								<p>Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>
-							</div>
+                            <svg style="display: none;">
+                                <defs>
+                                  <filter id="noise">
+                                    <feTurbulence
+                                      baseFrequency="0.7,0.8"
+                                      seed="0"
+                                      type="fractalNoise"
+                                      result="static"
+                                    >
+                                      <animate
+                                        attributeName="seed"
+                                        values="0;100"
+                                        dur="800ms"
+                                        repeatCount="1" 
+                                        begin="card.mouseenter"                           
+                                      />
+                                    </feTurbulence>
+                                    <feDisplacementMap in="SourceGraphic" in2="static">
+                                      <animate
+                                        attributeName="scale"
+                                        values="0;40;0"
+                                        dur="800ms"
+                                        repeatCount="1" 
+                                        begin="card.mouseenter"                           
+                                      />
+                                    </feDisplacementMap>
+                                  </filter>  
+                                </defs>
+                              </svg>
+							<div id="card" class="image fadeInLeft card"><img src="images/pic01.jpg" alt=""/>
+                                <div class="content fadeIn">
+                                    <h3>Residential</h3>
+                                    <p>Aenean ultricies magna non sapien rhoncus, ac ullamcorper lorem convallis. Quisque at venenatis nisi, amet finibus mauris. Sed sodales ultricies eros, sit amet sodales sapien.</p>
+                                </div>
+                            </div>
 						</section>
 						<section class="post">
-							<span class="image fadeInLeft"><img src="images/pic02.jpg" alt="" /></span>
+                            <svg style="display: none;">
+                                <defs>
+                                  <filter id="noise2">
+                                    <feTurbulence
+                                      baseFrequency="0.7,0.8"
+                                      seed="0"
+                                      type="fractalNoise"
+                                      result="static"
+                                    >
+                                      <animate
+                                        attributeName="seed"
+                                        values="0;100"
+                                        dur="800ms"
+                                        repeatCount="1" 
+                                        begin="card2.mouseenter"                           
+                                      />
+                                    </feTurbulence>
+                                    <feDisplacementMap in="SourceGraphic" in2="static">
+                                      <animate
+                                        attributeName="scale"
+                                        values="0;40;0"
+                                        dur="800ms"
+                                        repeatCount="1" 
+                                        begin="card2.mouseenter"                           
+                                      />
+                                    </feDisplacementMap>
+                                  </filter>  
+                                </defs>
+                              </svg>
+							<div id="card2" class="image fadeInLeft card"><img src="images/pic02.jpg" alt="" /></div>
 							<div class="content fadeIn">
 								<h3>Commercial</h3>
 								<p>Ultrices nec metus. Aenean ultricies magna et sapien rhoncus ac ullamcorper lorem convallis. Quisque at venenatis nisi amet finibus mauris. Sed sodales ultricies magna etiam.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>
 							</div>
 						</section>
 						<section class="post">
-							<span class="image fadeInLeft"><img src="images/pic03.jpg" alt="" /></span>
+                            <svg style="display: none;">
+                                <defs>
+                                  <filter id="noise3">
+                                    <feTurbulence
+                                      baseFrequency="0.7,0.8"
+                                      seed="0"
+                                      type="fractalNoise"
+                                      result="static"
+                                    >
+                                      <animate
+                                        attributeName="seed"
+                                        values="0;100"
+                                        dur="800ms"
+                                        repeatCount="1" 
+                                        begin="card3.mouseenter"                           
+                                      />
+                                    </feTurbulence>
+                                    <feDisplacementMap in="SourceGraphic" in2="static">
+                                      <animate
+                                        attributeName="scale"
+                                        values="0;40;0"
+                                        dur="800ms"
+                                        repeatCount="1" 
+                                        begin="card3.mouseenter"                           
+                                      />
+                                    </feDisplacementMap>
+                                  </filter>  
+                                </defs>
+                              </svg>
+							<div id="card3" class="image fadeInLeft card"><img src="images/pic03.jpg" alt="" /></div>
 							<div class="content fadeIn">
 								<h3>Service Upgrade & Repair</h3>
 								<p>Quis interdum. Lorem quis lacus justo. Sed libero condimentum vehicula sem vel, mattis amet mauris. Nullam lacinia sit amet felis vel vestibulum. Morbi aliquam aenean.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>
 							</div>
 						</section>
 						<section class="post">
-							<span class="image fadeIn"><img src="images/pic04.jpg" alt="" /></span>
+                            <svg style="display: none;">
+                                <defs>
+                                  <filter id="noise4">
+                                    <feTurbulence
+                                      baseFrequency="0.7,0.8"
+                                      seed="0"
+                                      type="fractalNoise"
+                                      result="static"
+                                    >
+                                      <animate
+                                        attributeName="seed"
+                                        values="0;100"
+                                        dur="800ms"
+                                        repeatCount="1" 
+                                        begin="card4.mouseenter"                           
+                                      />
+                                    </feTurbulence>
+                                    <feDisplacementMap in="SourceGraphic" in2="static">
+                                      <animate
+                                        attributeName="scale"
+                                        values="0;40;0"
+                                        dur="800ms"
+                                        repeatCount="1" 
+                                        begin="card4.mouseenter"                           
+                                      />
+                                    </feDisplacementMap>
+                                  </filter>  
+                                </defs>
+                              </svg>
+							<div id="card4" class="image fadeIn card"><img src="images/burnt-outlet1.jpg" alt="" /></div>
 							<div class="content fadeInLeft">
 								<h3>Lighting Design</h3>
 								<p>Integer vel tincidunt lacus. Nulla augue nunc, eleifend quis leo ac, maximus interdum tellus. Etiam at vestibulum felis, id efficitur risus. Praesent ac nulla ex. Duis elementum.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>
 							</div>
 						</section>
 						<section class="post">
-                            <span class="image fadeIn"><img class="parallax" src="images/burnt-outlet1.jpg" alt="" /></span>
-							
+                            <svg style="display: none;">
+                                <defs>
+                                  <filter id="noise5">
+                                    <feTurbulence
+                                      baseFrequency="0.7,0.8"
+                                      seed="0"
+                                      type="fractalNoise"
+                                      result="static"
+                                    >
+                                      <animate
+                                        attributeName="seed"
+                                        values="0;100"
+                                        dur="800ms"
+                                        repeatCount="1" 
+                                        begin="card5.mouseenter"                           
+                                      />
+                                    </feTurbulence>
+                                    <feDisplacementMap in="SourceGraphic" in2="static">
+                                      <animate
+                                        attributeName="scale"
+                                        values="0;40;0"
+                                        dur="800ms"
+                                        repeatCount="1" 
+                                        begin="card5.mouseenter"                           
+                                      />
+                                    </feDisplacementMap>
+                                  </filter>  
+                                </defs>
+                              </svg>
+                            <div id="card5" class="image fadeIn card">
+                                <img class="parallax" src="images/pic05.jpg" alt="" /></div>
 							<div class="content fadeInLeft">
 								<h3>Emergency Services</h3>
 								<p>Libero condimentum, vehicula sem vel, mattis mauris. Nullam lacinia sit amet felis vel vestibulum. Morbi in aliquam est. Aenean dapibus porttitor nulla ultrices venenatis.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>
 							</div>
 						</section>
 						<section class="post">
-							<span class="image fadeIn"><img src="images/pic06.jpg" alt="" /></span>
+                            <svg style="display: none;">
+                                <defs>
+                                  <filter id="noise6" class="noise3">
+                                    <feTurbulence
+                                      baseFrequency="0.7,0.8"
+                                      seed="0"
+                                      type="fractalNoise"
+                                      result="static"
+                                    >
+                                      <animate
+                                        attributeName="seed"
+                                        values="0;100"
+                                        dur="800ms"
+                                        repeatCount="1" 
+                                        begin="card6.mouseenter"                           
+                                      />
+                                    </feTurbulence>
+                                    <feDisplacementMap in="SourceGraphic" in2="static">
+                                      <animate
+                                        attributeName="scale"
+                                        values="0;40;0"
+                                        dur="800ms"
+                                        repeatCount="1" 
+                                        begin="card6.mouseenter"                           
+                                      />
+                                    </feDisplacementMap>
+                                  </filter>  
+                                </defs>
+                              </svg>
+							<div id="card6" class="image fadeIn card">
+                                <img src="images/pic06.jpg" alt="" /></div>
 							<div class="content fadeInLeft">
 								<h3>Rewiring Services</h3>
 								<p>Tristique tellus et ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent mauris risus, pellentesque eu leo non, tincidunt.</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>
 							</div>
 						</section>
 					</div>
@@ -203,7 +363,7 @@
 								<div class="col-12">
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
+										<li><input type="reset" value="Reset" class="glow-on-hover" /></li>
 									</ul>
 								</div>
 							</div>
