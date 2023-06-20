@@ -5293,7 +5293,7 @@ h1 {
 #four {
     background: #515151 url(images/overlay.png);
 }
-#contact {
+#five, #contact {
     background: #fff url(images/overlay.png);
     color: #000;
 }
