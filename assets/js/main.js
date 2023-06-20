@@ -1,3 +1,16 @@
+let maxHeight = document.querySelector(".answer");
+
+document.querySelector(".accordion-link").addEventListener("click", function() {
+    if (maxHeight.style.maxHeight === '20rem') {
+        maxHeight.style.maxHeight = '0';
+        document.querySelector('.fa-plus').style.display = 'block';
+        document.querySelector('.fa-minus').style.display = 'none';
+    } else {
+        maxHeight.style.maxHeight = '20rem';
+        document.querySelector('.fa-plus').style.display = 'none';
+        document.querySelector('.fa-minus').style.display = 'block';
+    }
+});
 
 (function($) {
 

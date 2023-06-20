@@ -2446,6 +2446,15 @@ input, select, textarea {
 				width: 100%;
 			}
 
+    .image.map {
+        height: 60vh;
+        display: block;
+    }
+    @media screen and (max-width: 980px) {
+        .image.map {
+            height: 40vh;
+        }
+    }
 /* List */
 
 	ol {
@@ -3700,7 +3709,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.wrapper {
-				padding: 3em 0 1em 0 ;
+				padding: 3em 0 3em 0 ;
 			}
 
 				.wrapper > .inner {
@@ -5273,6 +5282,9 @@ h1 {
 #two {
     background: #FCFCFC url(images/overlay.png);
 }
+#four {
+    background: #515151 url(images/overlay.png);
+}
 #contact {
     background: #fff url(images/overlay.png);
     color: #000;
@@ -5406,4 +5418,77 @@ h1 {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+/* Reviews */
+.accordion-item{
+    background-color: #1DA1F2;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0.5rem 2px 0.5rem rgba(0,0,0,.1);
+}
+
+.accordion-link {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: none;
+    background-color: #1DA1F2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+}
+
+.accordion-link span {
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.accordion-link .fa-minus {
+    display: none;
+}
+
+.answer {
+    overflow: hidden;
+    max-height: 0;
+    position: relative;
+    background-color: #fff;
+    transition: max-height 0.25s ease-in-out;
+    -moz-transition: max-height 0.2s ease-in-out;
+	-webkit-transition: max-height 0.2s ease-in-out;
+	-ms-transition: max-height 0.2s ease-in-out;
+	transition: max-height 0.2s ease-in-out;
+}
+
+.answer::before {
+    content: "";
+    position: absolute;
+    width: 0.6rem;
+    height: 90%;
+    background-color: #fa9005;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.answer p {
+    font-size: 1.25rem;
+    color: #000;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 980px) {
+    .accordion-item {
+        padding: 0.25rem 1rem;
+    }
+    .accordion-link{
+        font-size: 1.2rem;
+    }
+    .answer p{
+        font-size: 1rem;
+    }
 }
