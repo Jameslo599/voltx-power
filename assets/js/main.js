@@ -1,15 +1,21 @@
-let maxHeight = document.querySelector(".answer");
+let faqArray = document.querySelectorAll('.accordion-link');
 
-document.querySelector(".accordion-link").addEventListener("click", function() {
-    if (maxHeight.style.maxHeight === '20rem') {
-        maxHeight.style.maxHeight = '0';
-        document.querySelector('.fa-plus').style.display = 'block';
-        document.querySelector('.fa-minus').style.display = 'none';
-    } else {
-        maxHeight.style.maxHeight = '20rem';
-        document.querySelector('.fa-plus').style.display = 'none';
-        document.querySelector('.fa-minus').style.display = 'block';
-    }
+faqArray.forEach((e, i) => {
+    e.addEventListener("click", (ele) => {
+        let faqItem = ele.target.closest(`#question${[i]}`).querySelector('.answer');
+        let plusItem = ele.target.closest(`#question${[i]}`).querySelector('.fa-plus');
+        let minusItem = ele.target.closest(`#question${[i]}`).querySelector('.fa-minus');
+        console.log(faqItem);
+        if (faqItem.style.maxHeight === '20rem') {
+            faqItem.style.maxHeight = '0';
+            plusItem.style.display = 'block';
+            minusItem.style.display = 'none';
+        } else {
+            faqItem.style.maxHeight = '20rem';
+            plusItem.style.display = 'none';
+            minusItem.style.display = 'block';
+        }
+    });
 });
 
 (function($) {

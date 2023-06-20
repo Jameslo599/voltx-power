@@ -2964,10 +2964,6 @@ input, select, textarea {
 
 		@media screen and (max-width: 1280px) {
 
-			.spotlight h2 {
-				font-size: 1.25em;
-			}
-
 			.spotlight .image {
 				width: calc(66.6666666% - 1.25em);
 			}
@@ -3776,9 +3772,6 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.wrapper {
-				padding: 2.5em 0 0.5em 0 ;
-			}
 
 				.wrapper > .inner {
 					padding: 0 1.5em;
@@ -5240,6 +5233,9 @@ input, select, textarea {
 .logo > img {
     width: 700px;
 }
+#four h2, #five h2 {
+    font-size: 2em;
+}
 @media screen and (max-width: 1680px) {
     .logo > img {
         width: 600px;
@@ -5253,6 +5249,18 @@ input, select, textarea {
 @media screen and (max-width: 736px) {
     .logo > img {
         width: 400px;
+    }
+    .spotlight h2 {
+        font-size: 1.25em;
+    }
+    .wrapper.style2 h2 {
+        font-size: 1.25em;
+    }
+    #four h2 {
+        font-size: 1.25em;
+    }
+    #five h2 {
+        font-size: 1.25em;
     }
 }
 @media screen and (max-width: 480px) {
@@ -5441,7 +5449,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
-
+    cursor: pointer;
 }
 
 .accordion-link span {
@@ -5458,11 +5466,10 @@ h1 {
     max-height: 0;
     position: relative;
     background-color: #fff;
-    transition: max-height 0.25s ease-in-out;
-    -moz-transition: max-height 0.2s ease-in-out;
-	-webkit-transition: max-height 0.2s ease-in-out;
-	-ms-transition: max-height 0.2s ease-in-out;
-	transition: max-height 0.2s ease-in-out;
+    -moz-transition: max-height 0.25s ease-in-out;
+	-webkit-transition: max-height 0.25s ease-in-out;
+	-ms-transition: max-height 0.25s ease-in-out;
+	transition: max-height 0.25s ease-in-out;
 }
 
 .answer::before {
@@ -5486,9 +5493,9 @@ h1 {
         padding: 0.25rem 1rem;
     }
     .accordion-link{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .answer p{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
