@@ -5326,10 +5326,10 @@ h1 {
 }
 
 .is-inactive {
-    -moz-transform: translateX(2rem);
-    -webkit-transform: translateX(2rem);
-    -ms-transform: translateX(2rem);
-    transform: translateX(2rem);
+    -moz-transform: translateX(-2rem);
+    -webkit-transform: translateX(-2rem);
+    -ms-transform: translateX(-2rem);
+    transform: translateX(-2rem);
     opacity: 0 !important;
 }
 .is-inactive-left {
