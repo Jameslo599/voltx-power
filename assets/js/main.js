@@ -35,10 +35,10 @@ faqArray.forEach((e, i) => {
 
                 // Images (in the format of 'url': 'alignment').
                     images: {
-                        'images/longhorn.jpg': 'center',
-                        'images/bluebonnets.jpg': 'center',
-                        'images/theatre.jpg': 'center right',
-                        'images/cactus.jpg': 'center right'
+                        'images/desert.webp': 'center'
+                        // 'images/bluebonnets.jpg': 'center',
+                        // 'images/theatre.jpg': 'center right',
+                        // 'images/cactus.jpg': 'center right'
                     },
 
                 // Delay.
