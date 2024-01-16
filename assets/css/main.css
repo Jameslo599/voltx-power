@@ -261,7 +261,6 @@ h6 {
   font-weight: 700;
   line-height: 1em;
   margin: 0 0 1.5em 0;
-  padding-bottom: 1.25em;
   position: relative;
   text-transform: uppercase;
 }
@@ -276,7 +275,7 @@ h6:after {
   background-color: #0f0f0fba;
   display: block;
   height: 2px;
-  margin: 1rem 0;
+  margin: 0.5rem 0 1.5rem;
   width: 7rem;
 }
 
@@ -2079,6 +2078,11 @@ button.primary:active,
 
 /* Features */
 
+#header div {
+  margin-left: 0;
+  padding: 0rem;
+}
+
 .features {
   display: -moz-flex;
   display: -webkit-flex;
@@ -3053,8 +3057,8 @@ header.major h2 {
 .spotlight h2 {
   font-size: 2.25em;
   font-weight: 800;
-  margin: 0 0 0.7em 0;
-  padding-bottom: 0.75em;
+  margin: 0;
+  padding-bottom: 0.5em;
 }
 
 .spotlight .image {
@@ -4640,7 +4644,9 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   min-width: 70%;
-  padding: 3rem 3rem 3rem 0;
+  padding: 3rem;
+  text-align: center;
+  margin: 0;
 }
 
 #banner .bg {
@@ -4834,7 +4840,7 @@ body.is-preload #banner .bg {
     border-right: none;
     font-size: 1.25rem;
     min-width: 100%;
-    padding: 3rem 0 0 0;
+    padding: 3rem 0;
     text-align: center;
   }
 
@@ -4884,7 +4890,7 @@ body.is-preload #banner .bg {
   }
 
   #banner .content p {
-    font-size: 1.15rem;
+    font-size: 1rem;
     padding-top: 2rem;
   }
 
@@ -5331,7 +5337,7 @@ ul.contact-icons a:hover:before {
 /* Custom Code */
 .logo {
   text-align: center;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 .logo > img {
   width: 700px;
@@ -5370,6 +5376,9 @@ ul.contact-icons a:hover:before {
 @media screen and (max-width: 480px) {
   .logo > img {
     width: 100%;
+  }
+  .spotlight p {
+    font-size: 1rem;
   }
 }
 h1 {
@@ -5609,5 +5618,21 @@ h1 {
   }
   .answer p {
     font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 736px) {
+  #header div {
+    margin-left: 0;
+    padding: 0 3rem;
+  }
+  #header .navPanelToggle {
+    right: 2rem;
+  }
+  #header > div > a {
+    font-size: 1rem;
+  }
+  .spotlight p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
   }
 }
